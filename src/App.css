@@ -1,0 +1,204 @@
+/* Tailwind CSS utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Root and Body Styling */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #f8f9fa;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #e9ecef;
+}
+
+/* Menu Container */
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Dropdown Menu Button */
+.dropdown-button {
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  background-color: #070708;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.MenubarRoot {
+  display: flex;
+  justify-content: space-between;
+  background-color: #343a40;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.MenubarTrigger {
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent; 
+  border-radius: 0.5rem; 
+  background-color: #007bff;
+  color: white; 
+  transition: background-color 0.3s;
+  margin-left: 1rem;
+}
+
+.MenubarItem, .MenubarCheckboxItem, .MenubarRadioItem {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.MenubarItem:hover, .MenubarCheckboxItem:hover, .MenubarRadioItem:hover {
+  background-color: #f1f3f5;
+}
+
+/* Tabs Styles */
+.TabsList {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.TabsTrigger {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem; 
+  background-color: #f8f9fa; 
+  color: #343a40;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.TabsTrigger[selected] {
+  background-color: #007bff;
+  color: white; 
+}
+
+.TabsTrigger:hover {
+  background-color: #e2e6ea; 
+  color: #343a40; 
+}
+
+/* Tabs Content */
+.TabsContent {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Box Styles */
+.Box {
+  border: 1px solid #dee2e6;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.Box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.Box-header {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.Box-number {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #007bff;
+}
+
+.RightSlot {
+  margin-left: auto;
+  opacity: 0.6;
+  font-size: 0.9rem;
+}
+
+.tabstyle {
+  background-color: #f8f9fa; 
+  padding: 20px;
+  border-radius: 8px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.TabsList {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #007bff;
+}
+
+.TabsTrigger {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid transparent; 
+  border-radius: 30px; 
+  background-color: #e9ecef; 
+  color: #343a40; 
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px; 
+  text-transform: uppercase; 
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.TabsTrigger:hover {
+  background-color: #007bff;
+  color: white; 
+  border-color: #007bff; 
+}
+
+.TabsTrigger[selected] {
+  background-color: #007bff; 
+  color: white; 
+  border-color: #007bff; 
+}
+
+.TabsTrigger:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.4); 
+}
+
+.TabsContent {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
